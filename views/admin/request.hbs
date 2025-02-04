@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+{{>header}}
+<div class="request">
+
+<table border="10">
+    <caption><h1>Requests</h1></caption>
+    <thead>
+        <td>S.no</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Subject</td>
+        <td>Message</td>
+    </thead>
+    <tbody>
+        {{#each feedback}}
+        <tr>
+            <td>{{s_n}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{subject}}</td>
+            <td>{{message}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

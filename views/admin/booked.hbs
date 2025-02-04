@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+{{>header}}
+<table border="20">
+    <caption><h1>BOOKED USERS</h1></caption>
+    <thead>
+        <td>Booking ID</td>
+        <td>First </td>
+        <td>Middle</td>
+        <td>Last</td>
+        <td>Street</td>
+        <td>City</td>
+        <td>State</td>
+        <td>Postal</td>
+        <td>Country</td>
+        <td>Email</td>
+        <td>Phone</td>
+        <td>Check IN</td>
+        <td>Check OUT</td>
+        <td>Room Type</td>
+        <td>Room No.</td>
+        <td>Special Request</td>
+        <td colspan="2">Action</td>
+    </thead>
+    <tbody>
+        <tr>
+        {{#each booked}}
+        <td>{{id}}</td>
+        <td>{{first}}</td>
+        <td>{{middle}}</td>
+        <td>{{last}}</td>
+        <td>{{street}}</td>
+        <td>{{city}}</td>
+        <td>{{state}}</td>
+        <td>{{postal}}</td>
+        <td>{{country}}</td>
+        <td>{{email}}</td>
+        <td>{{phone}}</td>
+        <td>{{check_in}}</td>
+        <td>{{check_out}}</td>
+        <td>{{room_type}}</td>
+        <td>{{room_number}}</td>
+        <td>{{special}}</td>
+        <td id="edit">Edit</td>
+        <td id="delete">Delete</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
